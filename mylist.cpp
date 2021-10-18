@@ -9,7 +9,10 @@ Purpose: Program to create a list like object that behaves similarly to the List
 // constructor
 MyList::MyList(int size) {
     srand(time(NULL));  // call only once!
-
+    array = new int[size];
+    for(int i=0; i<size; i++){
+        array[i] = 0;
+    }
     /*
      * TODO write your initialization code here
      * this is where you will dynamically allocate
