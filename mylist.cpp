@@ -10,6 +10,7 @@ Purpose: Program to create a list like object that behaves similarly to the List
 MyList::MyList(int size) {
     srand(time(NULL));  // call only once!
     length = size;
+    initList();
 }
 
 // destructor
