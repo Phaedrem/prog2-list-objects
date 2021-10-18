@@ -1,6 +1,8 @@
-/*
- * replace with your comment header
- */
+/*********************
+Name: Darren Bowers
+Coding 05
+Purpose: Program to create a list like object that behaves similarly to the List object in Python as an introduction to classes and objects.
+**********************/
 
 #ifndef MYLIST_H
 #define MYLIST_H
