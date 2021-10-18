@@ -13,20 +13,11 @@ MyList::MyList(int size) {
     for(int i=0; i<size; i++){
         array[i] = 0;
     }
-    /*
-     * TODO write your initialization code here
-     * this is where you will dynamically allocate
-     * the array that is internal to this object
-     */
 }
 
 // destructor
 MyList::~MyList() {
-    /*
-     * TODO write your cleanup code here
-     * this is where you will dynamically de-allocate
-     * the array that is internal to this object
-     */
+    delete[] array;
 }
 
 /*
