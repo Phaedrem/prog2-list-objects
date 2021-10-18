@@ -38,6 +38,7 @@ public:
      */
 
 private:
+    void initList();
     // these are the only attributes allowed
     // DO NOT ADD OR MODIFY THEM
     int length;

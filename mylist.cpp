@@ -9,10 +9,7 @@ Purpose: Program to create a list like object that behaves similarly to the List
 // constructor
 MyList::MyList(int size) {
     srand(time(NULL));  // call only once!
-    array = new int[size];
-    for(int i=0; i<size; i++){
-        array[i] = 0;
-    }
+    length = size;
 }
 
 // destructor
@@ -20,6 +17,11 @@ MyList::~MyList() {
     delete[] array;
 }
 
+void MyList::initList(){
+    array = new int[length];
+    for(int i=0; i<length; i++){
+        array[i] = 0;
+    }
 /*
  * TODO write the rest of your methods here
  * remember, each method must begin with MyList::
