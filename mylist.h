@@ -23,10 +23,8 @@ public:
     ~MyList(); // destructor
 
  int getElement(int);
-    /*
-     * TODO write your setter prototypes here
-     * and erase this comment
-     */
+
+bool setElement(int, int);
 
     /*
      * TODO write your display methods here

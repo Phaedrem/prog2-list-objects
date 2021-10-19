@@ -28,6 +28,11 @@ void MyList::initList(){
 int MyList::getElement(int){
     return 0;
 }
+
+bool setElement(int, int){
+    return true;
+}
+
 /*
  * TODO write the rest of your methods here
  * remember, each method must begin with MyList::
