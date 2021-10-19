@@ -21,7 +21,7 @@ MyList::MyList(int size) {
 }
 
 // destructor
-MyList::~MyList() {
+MyList::~MyList(){
     delete[] array;
 }
 
@@ -30,6 +30,8 @@ int MyList::getElement(int index){
 }
 
 void MyList::setArray(int value){
+    for(int i=0; i<length; i++)
+        array[i] = value;
 }
 
 bool MyList::setElement(int value, int index){

@@ -23,8 +23,8 @@ int main(int argc, char** argv) {
 
     /* This will set the list to all 50 */
     cout << "set mylist to all 50" << endl;
-    //mylist.setArray(50);
-    //mylist.printArray();
+    mylist.setArray(50);
+    mylist.printArray();
     cout << endl;
 
     /* This will fail and set the array to the
