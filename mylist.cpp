@@ -10,19 +10,15 @@ Purpose: Program to create a list like object that behaves similarly to the List
 MyList::MyList(int size) {
     srand(time(NULL));  // call only once!
     length = size;
-    initList();
+    array = new int[length];
+    for(int i=0; i<length; i++){
+        array[i] = 0;
+    }
 }
 
 // destructor
 MyList::~MyList() {
     delete[] array;
-}
-
-void MyList::initList(){
-    array = new int[length];
-    for(int i=0; i<length; i++){
-        array[i] = 0;
-    }
 }
 
 int MyList::getElement(int){
