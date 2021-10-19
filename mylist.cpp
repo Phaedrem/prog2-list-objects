@@ -38,7 +38,22 @@ bool MyList::setElement(int value, int index){
     return true;
 }
 
-void MyList::setRandom(int minimum, int maximum){
+void MyList::setRandom(int valueOne, int valueTwo){
+    int min;
+    int max;
+    if(valueOne == valueTwo || valueOne < 1 || valueTwo < 1){
+        min = RMIN;
+        max = RMAX;
+    } else if(valueOne > valueTwo){
+        min = valueTwo;
+        max = valueOne;
+    } else{
+        min = valueOne;
+        max = valueTwo;
+    }
+    for(int i=0; i<length; i++){
+        array[i] = rand() % (min - max + 1) + min;
+    } 
 }
 
 void MyList::printArray(){

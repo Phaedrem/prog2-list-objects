@@ -30,29 +30,29 @@ int main(int argc, char** argv) {
     /* This will fail and set the array to the
      * default random 1-10 values */
     cout << "attempt to set to random numbers -2 to 4" << endl;
-    //mylist.setRandom(-2,4);
-    //mylist.printArray();
+    mylist.setRandom(-2,4);
+    mylist.printArray();
     cout << endl;
 
     /* This will fail and set the array to the
      * default random 1-10 values */
     cout << "attempt to set to random numbers 4 to 4" << endl;
-    //mylist.setRandom(4,4);
-    //mylist.printArray();
+    mylist.setRandom(4,4);
+    mylist.printArray();
     cout << endl;
 
     /* This will succeed and set the array to the
      * random 1-100 values */
     cout << "attempt to set to random numbers 1 to 100" << endl;
-    //mylist.setRandom(1,100);
-    //mylist.printArray();
+    mylist.setRandom(1,100);
+    mylist.printArray();
     cout << endl;
 
     /* This will succeed and set the array to the
      * random 500-1000 values */
     cout << "attempt to set to random numbers 500 to 1000" << endl;
-    //mylist.setRandom(1000,500);
-    //mylist.printArray();
+    mylist.setRandom(1000,500);
+    mylist.printArray();
     cout << endl;
 
     /* These next two sets will succeed and set the 1st and last
