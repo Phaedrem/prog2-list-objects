@@ -9,7 +9,11 @@ Purpose: Program to create a list like object that behaves similarly to the List
 // constructor
 MyList::MyList(int size) {
     srand(time(NULL));  // call only once!
-    length = size;
+    if(size <= 0){
+        length = DEFAULTSIZE; 
+    } else{
+        length = size;
+    }
     array = new int[length];
     for(int i=0; i<length; i++){
         array[i] = 0;
@@ -21,18 +25,18 @@ MyList::~MyList() {
     delete[] array;
 }
 
-int MyList::getElement(int){
+int MyList::getElement(int index){
     return 0;
 }
 
-void MyList::setArray(int){
+void MyList::setArray(int value){
 }
 
-bool MyList::setElement(int, int){
+bool MyList::setElement(int value, int index){
     return true;
 }
 
-void MyList::setRandom(int, int){
+void MyList::setRandom(int minimum, int maximum){
 }
 
 void MyList::printArray(){
