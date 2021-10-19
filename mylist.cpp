@@ -23,6 +23,11 @@ void MyList::initList(){
     for(int i=0; i<length; i++){
         array[i] = 0;
     }
+}
+
+int MyList::getElement(int){
+    return 0;
+}
 /*
  * TODO write the rest of your methods here
  * remember, each method must begin with MyList::

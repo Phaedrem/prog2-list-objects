@@ -22,11 +22,7 @@ public:
     MyList(int); // constructor
     ~MyList(); // destructor
 
-    /*
-     * TODO write your getter prototypes here
-     * and erase this comment
-     */
-
+ int getElement(int);
     /*
      * TODO write your setter prototypes here
      * and erase this comment
