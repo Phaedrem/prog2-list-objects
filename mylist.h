@@ -24,9 +24,13 @@ public:
 
 int getElement(int);
 
+void setArray(int);
+
 bool setElement(int, int);
 
 void setRandom(int, int);
+
+void printArray();
 
     /*
      * TODO write your display methods here

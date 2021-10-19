@@ -29,11 +29,18 @@ int MyList::getElement(int){
     return 0;
 }
 
-bool setElement(int, int){
+void MyList::setArray(int){
+}
+
+bool MyList::setElement(int, int){
     return true;
 }
 
-void setRandom(int, int){
+void MyList::setRandom(int, int){
+}
+
+void MyList::printArray(){
+
 }
 
 /*
