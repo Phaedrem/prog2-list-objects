@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
      * and initialize it to all zeros */
     cout << "create and initialize mylist" << endl;
     MyList mylist(LISTSIZE);
-    //mylist.printArray();
+    mylist.printArray();
     cout << endl;
 
     /* This will set the list to all 50 */

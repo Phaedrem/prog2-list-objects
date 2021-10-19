@@ -36,7 +36,11 @@ void MyList::setRandom(int, int){
 }
 
 void MyList::printArray(){
-
+    std::cout << "[";
+    for(int i=0; i< length; i++){
+        std::cout << array[i] << " ";
+    }
+    std::cout << "\b]" << std::endl;
 }
 
 /*
