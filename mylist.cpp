@@ -33,6 +33,9 @@ bool setElement(int, int){
     return true;
 }
 
+void setRandom(int, int){
+}
+
 /*
  * TODO write the rest of your methods here
  * remember, each method must begin with MyList::

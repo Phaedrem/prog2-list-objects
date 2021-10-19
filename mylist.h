@@ -22,9 +22,11 @@ public:
     MyList(int); // constructor
     ~MyList(); // destructor
 
- int getElement(int);
+int getElement(int);
 
 bool setElement(int, int);
+
+void setRandom(int, int);
 
     /*
      * TODO write your display methods here
