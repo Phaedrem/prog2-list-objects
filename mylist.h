@@ -33,11 +33,6 @@ void setRandom(int, int);
 
 void printArray();
 
-    /*
-     * TODO write your display methods here
-     * and erase this comment
-     */
-
 private:
     // these are the only attributes allowed
     // DO NOT ADD OR MODIFY THEM
