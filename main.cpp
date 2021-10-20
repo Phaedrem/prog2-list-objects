@@ -57,31 +57,31 @@ int main(int argc, char** argv) {
 
     /* These next two sets will succeed and set the 1st and last
      * elements to 1000 and 2000 respectively */
-    //if(mylist.setElement(1000, 0)){
-    //    cout << "Element Set" << endl;
-    //} else {
-    //    cout << "Element NOT Set" << endl;
-    //}
-    //if(mylist.setElement(2000, LISTSIZE-1)){
-    //    cout << "Element Set" << endl;
-    //} else {
-    //    cout << "Element NOT Set" << endl;
-    //}
-    //mylist.printArray();
+    if(mylist.setElement(1000, 0)){
+        cout << "Element Set" << endl;
+    } else {
+        cout << "Element NOT Set" << endl;
+    }
+    if(mylist.setElement(2000, LISTSIZE-1)){
+        cout << "Element Set" << endl;
+    } else {
+        cout << "Element NOT Set" << endl;
+    }
+    mylist.printArray();
     cout << endl;
 
     /* These next two sets will fail and leave the array unmodified */
-    //if(mylist.setElement(9999, -1)){
-    //    cout << "Element Set" << endl;
-    //} else {
-    //    cout << "Element NOT Set" << endl;
-    //}
-    //if(mylist.setElement(9999, LISTSIZE)){
-    //    cout << "Element Set" << endl;
-    //} else {
-    //    cout << "Element NOT Set" << endl;
-    //}
-    //mylist.printArray();
+    if(mylist.setElement(9999, -1)){
+        cout << "Element Set" << endl;
+    } else {
+        cout << "Element NOT Set" << endl;
+    }
+    if(mylist.setElement(9999, LISTSIZE)){
+        cout << "Element Set" << endl;
+    } else {
+        cout << "Element NOT Set" << endl;
+    }
+    mylist.printArray();
     cout << endl;
 
     /* print out the array using getElement() */

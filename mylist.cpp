@@ -6,7 +6,6 @@ Purpose: Program to create a list like object that behaves similarly to the List
 
 #include "mylist.h"
 
-// constructor
 MyList::MyList(int size) {
     srand(time(NULL));  // call only once!
     if(size <= 0){
@@ -20,7 +19,6 @@ MyList::MyList(int size) {
     }
 }
 
-// destructor
 MyList::~MyList(){
     delete[] array;
 }
@@ -35,7 +33,13 @@ void MyList::setArray(int value){
 }
 
 bool MyList::setElement(int value, int index){
-    return true;
+    bool pos = true;
+    if(index < 0 || index > length-1){
+        pos = false;
+    } else{
+        array[index] = value;
+    }
+    return pos;
 }
 
 void MyList::setRandom(int valueOne, int valueTwo){
