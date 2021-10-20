@@ -86,14 +86,14 @@ int main(int argc, char** argv) {
 
     /* print out the array using getElement() */
     cout << "printing the array element by element" << endl;
-    //for(int i=0; i<LISTSIZE; i++){
-    //    cout << mylist.getElement(i) << endl;
-    //}
+    for(int i=0; i<LISTSIZE; i++){
+        cout << mylist.getElement(i) << endl;
+    }
     cout << endl;
 
     /* this will fail and return 0 */
     cout << "attempting to get element 4000" << endl;
-    //cout << mylist.getElement(4000) << endl;
+    cout << mylist.getElement(4000) << endl;
     cout << endl;
     
     return 0;

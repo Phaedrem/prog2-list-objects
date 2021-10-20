@@ -24,7 +24,13 @@ MyList::~MyList(){
 }
 
 int MyList::getElement(int index){
-    return 0;
+    int element;
+    if(index >= 0 && index <= length){
+        element = array[index];
+    } else{
+        element = 0;
+    }
+    return element;
 }
 
 void MyList::setArray(int value){
@@ -67,9 +73,3 @@ void MyList::printArray(){
     }
     std::cout << "\b]" << std::endl;
 }
-
-/*
- * TODO write the rest of your methods here
- * remember, each method must begin with MyList::
- */
-
