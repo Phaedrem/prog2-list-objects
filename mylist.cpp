@@ -25,7 +25,7 @@ MyList::~MyList(){
 
 int MyList::getElement(int index){
     int element;
-    if(index >= 0 && index <= length){
+    if(index >= 0 && index <= length-1){
         element = array[index];
     } else{
         throw 0;
