@@ -82,16 +82,16 @@ int main(int argc, char** argv) {
         cout << "Element NOT Set" << endl;
     }
     mylist.printArray();
-    cout << endl;
+    cout << endl << "Testing new and/or modified code..." << endl << endl;
 
     /* print out the array using getElement() */
-    cout << "printing the array element by element" << endl;
-    for(int i=0; i<LISTSIZE; i++){
+    cout << "printing the array element by element using: int getElement(int);" << endl << "(going one too far to test out of range)" << endl;
+    for(int i=0; i<LISTSIZE+1; i++){
         try{
         cout << mylist.getElement(i) << endl;
         }
         catch(...){
-        cout << "Requested index does not exist" << endl;
+        cout << "error, out of range" << endl;
         }    
     }
     cout << endl;
@@ -101,7 +101,7 @@ int main(int argc, char** argv) {
     try{
         cout << mylist.getElement(4000) << endl;
     } catch(...){
-        cout << "Requested index does not exist" << endl;
+        cout << "error, out of range" << endl;
     }
     
     
