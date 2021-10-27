@@ -25,6 +25,8 @@ public:
 
 int getElement(int);
 
+bool getElement(int, int*);
+
 void setArray(int);
 
 bool setElement(int, int);

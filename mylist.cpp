@@ -33,6 +33,11 @@ int MyList::getElement(int index){
     return element;
 }
 
+bool getElement(int index, int *iptr){
+    return true;
+}
+
+
 void MyList::setArray(int value){
     for(int i=0; i<length; i++)
         array[i] = value;
