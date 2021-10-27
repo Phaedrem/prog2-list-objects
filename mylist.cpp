@@ -23,12 +23,10 @@ MyList::~MyList(){
 
 int MyList::getElement(int index){
     int element;
-    if(index >= 0 && index <= length-1){
-        element = array[index];
-        return element;
+    if(index < 0 || index > length-1){
+        throw 0;
     }
-    throw 0;
-    
+    return element = array[index];
 }
 
 bool getElement(int index, int *iptr){
