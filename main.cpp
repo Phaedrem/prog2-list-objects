@@ -86,13 +86,14 @@ int main(int argc, char** argv) {
 
     /* print out the array using getElement() */
     cout << "printing the array element by element" << endl;
-    try{
-        for(int i=0; i<LISTSIZE; i++){
-            cout << mylist.getElement(i) << endl;
+    for(int i=0; i<LISTSIZE; i++){
+        try{
+        cout << mylist.getElement(i) << endl;
         }
-    } catch(...){
+        catch(...){
         cout << "Requested index does not exist" << endl;
-    }    
+        }    
+    }
     cout << endl;
 
     /* this will fail and return 0 */
