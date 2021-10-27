@@ -42,10 +42,9 @@ void MyList::setArray(int value){
 }
 
 bool MyList::setElement(int value, int index){
-    bool pos = true;
-    if(index < 0 || index > length-1){
-        pos = false;
-    } else{
+    bool pos = false;
+    if(index >= 0 && index < length){
+        pos = true;
         array[index] = value;
     }
     return pos;
