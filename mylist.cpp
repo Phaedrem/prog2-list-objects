@@ -14,9 +14,7 @@ MyList::MyList(int size) {
         length = size;
     }
     array = new int[length];
-    for(int i=0; i<length; i++){
-        array[i] = 0;
-    }
+    setArray(0);
 }
 
 MyList::~MyList(){
