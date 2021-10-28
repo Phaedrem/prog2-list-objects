@@ -116,6 +116,7 @@ int main(int argc, char** argv) {
 
     cout << "resizing array to LISTSIZE" << endl;
     if(mylist.resizeArray(LISTSIZE)){
+        cout << "resized..." << endl;
         mylist.printArray();
     } else{
         cout << "failed to resize" << endl;
@@ -124,6 +125,25 @@ int main(int argc, char** argv) {
 
     cout << "resizing array to LISTSIZE+5" << endl;
     if(mylist.resizeArray(LISTSIZE+5)){
+        cout << "resized..." << endl;
+        mylist.printArray();
+    } else{
+        cout << "failed to resize" << endl;
+    }
+    cout << endl;
+
+    cout << "resizing array to LISTSIZE-5" << endl;
+    if(mylist.resizeArray(LISTSIZE-5)){
+        cout << "resized..." << endl;
+        mylist.printArray();
+    } else{
+        cout << "failed to resize" << endl;
+    }
+    cout << endl;
+
+    cout << "resizing array to 0" << endl;
+    if(mylist.resizeArray(0)){
+        cout << "resized..." << endl;
         mylist.printArray();
     } else{
         cout << "failed to resize" << endl;
