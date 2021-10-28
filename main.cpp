@@ -113,6 +113,14 @@ int main(int argc, char** argv) {
         cout << "error, out of range" << endl;
     }  
     cout << endl;
+
+    cout << "resizing array to LISTSIZE" << endl;
+    if(mylist.resizeArray(LISTSIZE)){
+        mylist.printArray();
+    } else{
+        cout << "failed to resize" << endl;
+    }
+    cout << endl; 
     
     return 0;
 }
