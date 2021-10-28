@@ -35,6 +35,8 @@ void setRandom(int, int);
 
 void printArray();
 
+bool resizeArray(int);
+
 private:
     // these are the only attributes allowed
     // DO NOT ADD OR MODIFY THEM
