@@ -29,8 +29,13 @@ int MyList::getElement(int index){
     return element = array[index];
 }
 
-bool getElement(int index, int *iptr){
-    return true;
+bool MyList::getElement(int index, int *iptr){
+    bool pos = false;
+    if(index >= 0 && index < length){
+        *iptr = array[index];
+        pos = true;
+    }
+    return pos;
 }
 
 
