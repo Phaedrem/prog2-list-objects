@@ -7,13 +7,7 @@ Purpose: Program to create a list like object that behaves similarly to the List
 #include "main.h"
 
 int main(int argc, char** argv) {
-    /***********************************
-     * DO NOT MODIFY THIS FILE OTHER THAN
-     * TO ADD YOUR COMMENT HEADER AND
-     * UNCOMMENT THINGS AS YOU COMPLETE
-     * THE FUNCTIONALITY OF YOUR LIST OBJECT
-     ***********************************/
-
+    int element = 0; 
     /* This will create a "list" of size LISTSIZE
      * and initialize it to all zeros */
     cout << "create and initialize mylist" << endl;
@@ -100,7 +94,16 @@ int main(int argc, char** argv) {
     } catch(...){
         cout << "error, out of range" << endl;
     } 
-    
+    cout << endl;
+
+    cout << "printing the array element by element using: bool getElement(int, int*);" << endl << "(going one too far to test out of range)" << endl;
+    for(int i=0; i<LISTSIZE+1; i++){
+        if(mylist.getElement(i, &element)){
+            cout << element << endl;
+        } else{
+        cout << "error, out of range" << endl;
+        }   
+    }
     cout << endl;
     
     return 0;
