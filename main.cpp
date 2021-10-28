@@ -88,21 +88,18 @@ int main(int argc, char** argv) {
     for(int i=0; i<LISTSIZE+1; i++){
         try{
             cout << mylist.getElement(i) << endl;
-        }
-        catch(...){
+        } catch(...){
             cout << "error, out of range" << endl;
         }    
     }
     cout << endl;
 
     cout << "attempting to get element [LISTSIZE * 1.5] using int getElement(int);" << endl;
-        try{
-            cout << mylist.getElement((LISTSIZE * 1.5)) << endl;
-        }
-        catch(...){
-            cout << "error, out of range" << endl;
-        } 
-
+    try{
+        cout << mylist.getElement((LISTSIZE * 1.5)) << endl;
+    } catch(...){
+        cout << "error, out of range" << endl;
+    } 
     
     cout << endl;
     
