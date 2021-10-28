@@ -49,20 +49,14 @@ bool MyList::setElement(int value, int index){
 }
 
 void MyList::setRandom(int valueOne, int valueTwo){
-    int min;
-    int max;
     if(valueOne == valueTwo || valueOne < 1 || valueTwo < 1){
-        min = RMIN;
-        max = RMAX;
+        valueOne = RMIN;
+        valueTwo = RMAX;
     } else if(valueOne > valueTwo){
-        min = valueTwo;
-        max = valueOne;
-    } else{
-        min = valueOne;
-        max = valueTwo;
+        swap(&valueOne, &valueTwo);
     }
     for(int i=0; i<length; i++){
-        array[i] = rand() % (min - max + 1) + min;
+        array[i] = rand() % (valueOne - valueTwo + 1) + valueOne;
     } 
 }
 
@@ -72,4 +66,10 @@ void MyList::printArray(){
         std::cout << array[i] << " ";
     }
     std::cout << "\b]" << std::endl;
+}
+
+void MyList::swap(int *n1, int *n2){
+    int temp = *n1;
+    *n1 = *n2;
+    *n2 = temp;
 }

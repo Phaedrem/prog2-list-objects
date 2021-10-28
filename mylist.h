@@ -40,6 +40,8 @@ private:
     // DO NOT ADD OR MODIFY THEM
     int length;
     int *array;
+
+    void swap(int*, int*);
 };
 
 #endif //MYLIST_H
