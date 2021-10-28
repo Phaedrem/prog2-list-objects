@@ -89,8 +89,9 @@ bool MyList::resizeArray(int size){
         }
         delete[] array;
         array = temparray;
-        for(int i = length; i<size; i++)
+        for(int i = length; i<size; i++){
             array[i] = 0;
+        }
         length = size;
     }
 
