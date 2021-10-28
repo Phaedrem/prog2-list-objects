@@ -84,26 +84,25 @@ int main(int argc, char** argv) {
     mylist.printArray();
     cout << endl << "Testing new and/or modified code..." << endl << endl;
 
-    /* print out the array using getElement() */
     cout << "printing the array element by element using: int getElement(int);" << endl << "(going one too far to test out of range)" << endl;
     for(int i=0; i<LISTSIZE+1; i++){
         try{
-        cout << mylist.getElement(i) << endl;
+            cout << mylist.getElement(i) << endl;
         }
         catch(...){
-        cout << "error, out of range" << endl;
+            cout << "error, out of range" << endl;
         }    
     }
     cout << endl;
 
-    /* this will fail and return 0 */
-    cout << "attempting to get element 4000" << endl;
-    try{
-        cout << mylist.getElement(4000) << endl;
-    } catch(...){
-        cout << "error, out of range" << endl;
-    }
-    
+    cout << "attempting to get element [LISTSIZE * 1.5] using int getElement(int);" << endl;
+        try{
+            cout << mylist.getElement((LISTSIZE * 1.5)) << endl;
+        }
+        catch(...){
+            cout << "error, out of range" << endl;
+        } 
+
     
     cout << endl;
     
