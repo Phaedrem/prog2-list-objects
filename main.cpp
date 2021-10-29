@@ -1,6 +1,6 @@
 /*********************
 Name: Darren Bowers
-Coding 05
+Coding 05 / 06
 Purpose: Program to create a list like object that behaves similarly to the List object in Python as an introduction to classes and objects.
 **********************/
 
