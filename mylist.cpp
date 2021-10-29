@@ -14,7 +14,7 @@ MyList::MyList(int size) {
         length = size;
     }
     array = new int[length];
-    setArray(0);
+    setArray(DEFAULTELEMENT);
 }
 
 MyList::~MyList(){
@@ -90,7 +90,7 @@ bool MyList::resizeArray(int size){
         delete[] array;
         array = temparray;
         for(int i = length; i<size; i++){
-            array[i] = 0;
+            array[i] = DEFAULTELEMENT;
         }
         length = size;
     }
