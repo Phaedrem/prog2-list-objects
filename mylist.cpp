@@ -8,11 +8,7 @@ Purpose: Program to create a list like object that behaves similarly to the List
 
 MyList::MyList(int size) {
     srand(time(NULL));  // call only once!
-    if(size <= 0){
-        length = DEFAULTSIZE; 
-    } else{
-        length = size;
-    }
+    length = size > 0 ? size : DEFAULTSIZE;
     array = new int[length];
     setArray(DEFAULTELEMENT);
 }
