@@ -80,20 +80,26 @@ void MyList::swap(int *n1, int *n2){
 }
 
 bool MyList::resizeArray(int size){
-    bool pos = false;
-    if(size != length && size >= 1){
-        pos = true;
+    bool flag = false;
+    if(size != length && size >= RMIN){
+        flag = true;
         int *temparray = new int[size];
-        for(int i = 0; i<size; i++){
-            temparray[i] = array[i];
+        if(size > length){
+            for(int i = 0; i<length; i++){
+                temparray[i] = array[i];
+            }
+            for(int i = length; i<size; i++){
+                temparray[i] = DEFAULTELEMENT;
+            }
+        } else{
+            for(int i = 0; i<size; i++){
+                temparray[i] = array[i];
+            }
         }
         delete[] array;
         array = temparray;
-        for(int i = length; i<size; i++){
-            array[i] = DEFAULTELEMENT;
-        }
         length = size;
     }
 
-    return pos;
+    return flag;
 }
