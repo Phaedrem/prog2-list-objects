@@ -77,7 +77,7 @@ void MyList::swap(int *n1, int *n2){
 
 bool MyList::resizeArray(int size){
     bool flag = false;
-    if(size != length && size >= RMIN){
+    if(size != length && size >= 1){
         flag = true;
         int *temparray = new int[size];
         if(size > length){
