@@ -70,6 +70,7 @@ bool MyList::setElement(int value, int index){
     if(inRange(index)){
         array[index] = value;
         set = true;
+        sorted = false;
     }
     return set;
 }
@@ -83,7 +84,8 @@ void MyList::setRandom(int valueOne, int valueTwo){
     }
     for(int i=0; i<length; i++){
         array[i] = rand() % (valueOne - valueTwo + 1) + valueOne;
-    } 
+    }
+    sorted = false; 
 }
 
 void MyList::printArray(){
