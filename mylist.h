@@ -32,6 +32,7 @@ void setRandom(int, int);
 void printArray();
 bool resizeArray(int);
 int getLength();
+bool getSorted();
 
 private:
 

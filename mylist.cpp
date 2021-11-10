@@ -116,3 +116,7 @@ bool MyList::resizeArray(int newSize){
 int MyList::getLength(){
     return length;
 }
+
+bool MyList::getSorted(){
+    return sorted;
+}

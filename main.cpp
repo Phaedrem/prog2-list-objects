@@ -13,11 +13,21 @@ int main(int argc, char** argv) {
     cout << "create and initialize mylist" << endl;
     MyList mylist(LISTSIZE);
     mylist.printArray();
+    if(mylist.getSorted()){
+        cout << "list is currently sorted." << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+    }
     cout << endl;
 
     /* This will set the list to all 50 */
     cout << "set mylist to all 50" << endl;
     mylist.setArray(50);
+    if(mylist.getSorted()){
+        cout << "list is currently sorted." << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+    }
     mylist.printArray();
     cout << endl;
 
