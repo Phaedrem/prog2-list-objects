@@ -25,6 +25,10 @@ MyList::~MyList(){
 PRIVATE
 *********************************/
 
+bool MyList::inRange(int index){
+    return index >= 0 && index < length;
+}
+
 void MyList::swap(int *n1, int *n2){
     int temp = *n1;
     *n1 = *n2;

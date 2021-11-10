@@ -39,12 +39,12 @@ void printArray();
 bool resizeArray(int);
 
 private:
-    // these are the only attributes allowed
-    // DO NOT ADD OR MODIFY THEM
+
     int length;
     int *array;
 
     void swap(int*, int*);
+    bool inRange(int);
 };
 
 #endif //MYLIST_H
