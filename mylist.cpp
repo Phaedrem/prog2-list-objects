@@ -108,6 +108,8 @@ bool MyList::resizeArray(int newSize){
             tempArray[i] = DEFAULTELEMENT;
         }
         delete[] array;
+        if(newSize > length)
+            sorted = false;
         array = tempArray;
         length = newSize;
         resized = true;
