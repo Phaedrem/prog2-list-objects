@@ -41,11 +41,10 @@ PUBLIC
 *********************************/
 
 int MyList::getElement(int index){
-    int element;
-    if(index < 0 || index > length-1){
+    if(!inRange(index)){
         throw 0;
     }
-    return element = array[index];
+    return array[index];
 }
 
 bool MyList::getElement(int index, int *iptr){
