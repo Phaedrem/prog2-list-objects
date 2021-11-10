@@ -33,6 +33,7 @@ void printArray();
 bool resizeArray(int);
 int getLength();
 bool getSorted();
+void sort();
 
 private:
 

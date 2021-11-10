@@ -124,3 +124,7 @@ int MyList::getLength(){
 bool MyList::getSorted(){
     return sorted;
 }
+
+void MyList::sort(){
+    
+}
