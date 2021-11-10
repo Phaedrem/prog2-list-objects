@@ -126,5 +126,16 @@ bool MyList::getSorted(){
 }
 
 void MyList::sort(){
-    
+    if(sorted = false);
+        int i, j, minindex; 
+        for (i = 0; i < length-1; i++) { 
+            minindex = i; 
+            for (j = i+1; j < length; j++) {
+                if (array[j] < array[minindex]) {
+                    minindex = j; 
+                }
+            }
+            swap(&array[minindex], &array[i]); 
+            sorted = true;
+    } 
 }
