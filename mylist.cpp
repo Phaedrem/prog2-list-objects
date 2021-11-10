@@ -93,27 +93,21 @@ void MyList::printArray(){
     std::cout << "\b]" << std::endl;
 }
 
-bool MyList::resizeArray(int size){
-    bool flag = false;
-    if(size != length && size >= 1){
-        flag = true;
-        int *temparray = new int[size];
-        if(size > length){
-            for(int i = 0; i<length; i++){
-                temparray[i] = array[i];
-            }
-            for(int i = length; i<size; i++){
-                temparray[i] = DEFAULTELEMENT;
-            }
-        } else{
-            for(int i = 0; i<size; i++){
-                temparray[i] = array[i];
-            }
+bool MyList::resizeArray(int newSize){
+    bool resized = false;
+    if(newSize > 0 && newSize != length){
+        int *tempArray = new int[newSize];
+        int min = std::min(newSize, length); //NEW LINE grabs the lower value
+        for(int i = 0; i<min; i++){
+            tempArray[i] = array[i];
+        }
+        for(int i = length; i<newSize; i++){
+            tempArray[i] = DEFAULTELEMENT;
         }
         delete[] array;
-        array = temparray;
-        length = size;
+        array = tempArray;
+        length = newSize;
+        resized = true;
     }
-
-    return flag;
+    return resized;
 }
