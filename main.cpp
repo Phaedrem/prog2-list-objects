@@ -17,6 +17,9 @@ int main(int argc, char** argv) {
         cout << "List is currently sorted" << endl;
     } else{
         cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
     }
     cout << endl;
 
@@ -28,6 +31,9 @@ int main(int argc, char** argv) {
         cout << "List is currently sorted" << endl;
     } else{
         cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
     }
     cout << endl;
 
@@ -40,6 +46,9 @@ int main(int argc, char** argv) {
         cout << "List is currently sorted" << endl;
     } else{
         cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
     }
     cout << endl;
 
@@ -52,6 +61,9 @@ int main(int argc, char** argv) {
         cout << "List is currently sorted" << endl;
     } else{
         cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
     }
     cout << endl;
 
@@ -63,6 +75,9 @@ int main(int argc, char** argv) {
         cout << "List is currently sorted" << endl;
     } else{
         cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
     }
     cout << endl;
 
@@ -75,6 +90,9 @@ int main(int argc, char** argv) {
         cout << "List is currently sorted" << endl;
     } else{
         cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
     }
     cout << endl;
 
@@ -87,6 +105,9 @@ int main(int argc, char** argv) {
         cout << "List is currently sorted" << endl;
     } else{
         cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
     }
     cout << endl;
 
@@ -109,6 +130,9 @@ int main(int argc, char** argv) {
         cout << "List is currently sorted" << endl;
     } else{
         cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
     }
     cout << endl;
 
@@ -129,6 +153,9 @@ int main(int argc, char** argv) {
         cout << "List is currently sorted" << endl;
     } else{
         cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
     }
     
     cout << endl << "Testing Coding06 new and/or modified code..." << endl << endl;
@@ -176,8 +203,16 @@ int main(int argc, char** argv) {
     } else{
         cout << "Failed to resize" << endl;
     }
-    cout << "The current length of the array is " << mylist.getLength() << endl; 
-    cout << endl; 
+    cout << "The current length of the array is " << mylist.getLength() << endl;
+    if(mylist.getSorted()){
+        cout << "List is currently sorted" << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
+    }
+    cout << endl;
     
 
     cout << "Resizing array to LISTSIZE+5" << endl;
@@ -188,6 +223,14 @@ int main(int argc, char** argv) {
         cout << "Failed to resize" << endl;
     }
     cout << "The current length of the array is " << mylist.getLength() << endl;
+    if(mylist.getSorted()){
+        cout << "List is currently sorted" << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
+    }
     cout << endl;
      
 
@@ -199,6 +242,14 @@ int main(int argc, char** argv) {
         cout << "Failed to resize" << endl;
     }
     cout << "The current length of the array is " << mylist.getLength() << endl;
+    if(mylist.getSorted()){
+        cout << "List is currently sorted" << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
+    }
     cout << endl;
      
 
@@ -210,7 +261,14 @@ int main(int argc, char** argv) {
         cout << "Failed to resize" << endl;
     }
     cout << "The current length of the array is " << mylist.getLength() << endl;
+    if(mylist.getSorted()){
+        cout << "List is currently sorted" << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
+    }
     cout << endl; 
-
     return 0;
 }
