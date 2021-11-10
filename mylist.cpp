@@ -62,6 +62,7 @@ bool MyList::getElement(int index, int *element){
 void MyList::setArray(int value){
     for(int i=0; i<length; i++)
         array[i] = value;
+        sorted = true;
 }
 
 bool MyList::setElement(int value, int index){
