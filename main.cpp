@@ -23,12 +23,12 @@ int main(int argc, char** argv) {
     /* This will set the list to all 50 */
     cout << "set mylist to all 50" << endl;
     mylist.setArray(50);
+    mylist.printArray();
     if(mylist.getSorted()){
         cout << "list is currently sorted." << endl;
     } else{
         cout << "List is unsorted" << endl;
     }
-    mylist.printArray();
     cout << endl;
 
     /* This will fail and set the array to the
@@ -36,6 +36,11 @@ int main(int argc, char** argv) {
     cout << "attempt to set to random numbers -2 to 4" << endl;
     mylist.setRandom(-2,4);
     mylist.printArray();
+    if(mylist.getSorted()){
+        cout << "list is currently sorted." << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+    }
     cout << endl;
 
     /* This will fail and set the array to the
@@ -43,6 +48,22 @@ int main(int argc, char** argv) {
     cout << "attempt to set to random numbers 4 to 4" << endl;
     mylist.setRandom(4,4);
     mylist.printArray();
+    if(mylist.getSorted()){
+        cout << "list is currently sorted." << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+    }
+    cout << endl;
+
+    /* This will set the list to all 50 */
+    cout << "set mylist to all 250" << endl;
+    mylist.setArray(250);
+    mylist.printArray();
+    if(mylist.getSorted()){
+        cout << "list is currently sorted." << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+    }
     cout << endl;
 
     /* This will succeed and set the array to the
@@ -50,6 +71,11 @@ int main(int argc, char** argv) {
     cout << "attempt to set to random numbers 1 to 100" << endl;
     mylist.setRandom(1,100);
     mylist.printArray();
+    if(mylist.getSorted()){
+        cout << "list is currently sorted." << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+    }
     cout << endl;
 
     /* This will succeed and set the array to the
@@ -57,6 +83,11 @@ int main(int argc, char** argv) {
     cout << "attempt to set to random numbers 500 to 1000" << endl;
     mylist.setRandom(1000,500);
     mylist.printArray();
+    if(mylist.getSorted()){
+        cout << "list is currently sorted." << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+    }
     cout << endl;
 
     /* These next two sets will succeed and set the 1st and last
@@ -72,6 +103,11 @@ int main(int argc, char** argv) {
         cout << "Element NOT Set" << endl;
     }
     mylist.printArray();
+    if(mylist.getSorted()){
+        cout << "list is currently sorted." << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+    }
     cout << endl;
 
     /* These next two sets will fail and leave the array unmodified */
@@ -86,6 +122,12 @@ int main(int argc, char** argv) {
         cout << "Element NOT Set" << endl;
     }
     mylist.printArray();
+    if(mylist.getSorted()){
+        cout << "list is currently sorted." << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+    }
+    
     cout << endl << "Testing Coding06 new and/or modified code..." << endl << endl;
 
     cout << "printing the array element by element using: int getElement(int);" << endl << "(going one too far to test out of range)" << endl;
