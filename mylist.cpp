@@ -47,13 +47,15 @@ int MyList::getElement(int index){
     return array[index];
 }
 
-bool MyList::getElement(int index, int *iptr){
-    bool pos = false;
-    if(index >= 0 && index < length){
-        *iptr = array[index];
-        pos = true;
+bool MyList::getElement(int index, int *element){
+    bool okay = false;
+    if(inRange(index)){
+        *element = array[index];
+        okay = true;
+    } else{
+        *element = 0;
     }
-    return pos;
+    return okay;
 }
 
 
