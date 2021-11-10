@@ -6,6 +6,10 @@ Purpose: Program to create a list like object that behaves similarly to the List
 
 #include "mylist.h"
 
+/*********************************
+CONSTRUCTORS / DESTRUCTORS
+*********************************/
+
 MyList::MyList(int size) {
     srand(time(NULL));  // call only once!
     length = size > 0 ? size : DEFAULTSIZE;
@@ -16,6 +20,21 @@ MyList::MyList(int size) {
 MyList::~MyList(){
     delete[] array;
 }
+
+/*********************************
+PRIVATE
+*********************************/
+
+void MyList::swap(int *n1, int *n2){
+    int temp = *n1;
+    *n1 = *n2;
+    *n2 = temp;
+}
+
+
+/*********************************
+PUBLIC
+*********************************/
 
 int MyList::getElement(int index){
     int element;
@@ -67,12 +86,6 @@ void MyList::printArray(){
         std::cout << array[i] << " ";
     }
     std::cout << "\b]" << std::endl;
-}
-
-void MyList::swap(int *n1, int *n2){
-    int temp = *n1;
-    *n1 = *n2;
-    *n2 = temp;
 }
 
 bool MyList::resizeArray(int size){
