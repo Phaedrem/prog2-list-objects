@@ -65,12 +65,12 @@ void MyList::setArray(int value){
 }
 
 bool MyList::setElement(int value, int index){
-    bool pos = false;
-    if(index >= 0 && index < length){
-        pos = true;
+    bool set = false;
+    if(inRange(index)){
         array[index] = value;
+        set = true;
     }
-    return pos;
+    return set;
 }
 
 void MyList::setRandom(int valueOne, int valueTwo){
