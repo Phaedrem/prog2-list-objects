@@ -76,7 +76,7 @@ int main(int argc, char** argv) {
         cout << "Element NOT Set" << endl;
     }
     mylist.printArray();
-    cout << endl << "Testing new and/or modified code..." << endl << endl;
+    cout << endl << "Testing Coding06 new and/or modified code..." << endl << endl;
 
     cout << "printing the array element by element using: int getElement(int);" << endl << "(going one too far to test out of range)" << endl;
     for(int i=0; i<LISTSIZE+1; i++){
@@ -121,7 +121,9 @@ int main(int argc, char** argv) {
     } else{
         cout << "failed to resize" << endl;
     }
+    cout << "The current length of the array is " << mylist.getLength() << endl; 
     cout << endl; 
+    
 
     cout << "resizing array to LISTSIZE+5" << endl;
     if(mylist.resizeArray(LISTSIZE+5)){
@@ -130,7 +132,9 @@ int main(int argc, char** argv) {
     } else{
         cout << "failed to resize" << endl;
     }
+    cout << "The current length of the array is " << mylist.getLength() << endl;
     cout << endl;
+     
 
     cout << "resizing array to LISTSIZE-5" << endl;
     if(mylist.resizeArray(LISTSIZE-5)){
@@ -139,7 +143,9 @@ int main(int argc, char** argv) {
     } else{
         cout << "failed to resize" << endl;
     }
+    cout << "The current length of the array is " << mylist.getLength() << endl;
     cout << endl;
+     
 
     cout << "resizing array to 0" << endl;
     if(mylist.resizeArray(0)){
@@ -148,7 +154,8 @@ int main(int argc, char** argv) {
     } else{
         cout << "failed to resize" << endl;
     }
-    cout << endl;
+    cout << "The current length of the array is " << mylist.getLength() << endl;
+    cout << endl; 
 
     return 0;
 }

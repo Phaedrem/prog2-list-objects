@@ -31,6 +31,7 @@ bool setElement(int, int);
 void setRandom(int, int);
 void printArray();
 bool resizeArray(int);
+int getLength();
 
 private:
 
@@ -40,7 +41,7 @@ private:
     void swap(int*, int*);
     bool inRange(int);
     bool sorted;
-    
+
 };
 
 #endif //MYLIST_H

@@ -112,3 +112,7 @@ bool MyList::resizeArray(int newSize){
     }
     return resized;
 }
+
+int MyList::getLength(){
+    return length;
+}
