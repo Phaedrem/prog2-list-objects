@@ -15,11 +15,13 @@ int main(int argc, char** argv) {
     mylist.printArray();
     if(mylist.getSorted()){
         cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
     } else{
         cout << "List is unsorted" << endl;
         cout << "Sorting array" << endl;
         mylist.sort();
         mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
     }
     cout << endl;
 
@@ -29,11 +31,13 @@ int main(int argc, char** argv) {
     mylist.printArray();
     if(mylist.getSorted()){
         cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
     } else{
         cout << "List is unsorted" << endl;
         cout << "Sorting array" << endl;
         mylist.sort();
         mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
     }
     cout << endl;
 
@@ -44,11 +48,13 @@ int main(int argc, char** argv) {
     mylist.printArray();
     if(mylist.getSorted()){
         cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
     } else{
         cout << "List is unsorted" << endl;
         cout << "Sorting array" << endl;
         mylist.sort();
         mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
     }
     cout << endl;
 
@@ -59,11 +65,13 @@ int main(int argc, char** argv) {
     mylist.printArray();
     if(mylist.getSorted()){
         cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
     } else{
         cout << "List is unsorted" << endl;
         cout << "Sorting array" << endl;
         mylist.sort();
         mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
     }
     cout << endl;
 
@@ -73,11 +81,13 @@ int main(int argc, char** argv) {
     mylist.printArray();
     if(mylist.getSorted()){
         cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
     } else{
         cout << "List is unsorted" << endl;
         cout << "Sorting array" << endl;
         mylist.sort();
         mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
     }
     cout << endl;
 
@@ -88,11 +98,13 @@ int main(int argc, char** argv) {
     mylist.printArray();
     if(mylist.getSorted()){
         cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
     } else{
         cout << "List is unsorted" << endl;
         cout << "Sorting array" << endl;
         mylist.sort();
         mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
     }
     cout << endl;
 
@@ -103,11 +115,13 @@ int main(int argc, char** argv) {
     mylist.printArray();
     if(mylist.getSorted()){
         cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
     } else{
         cout << "List is unsorted" << endl;
         cout << "Sorting array" << endl;
         mylist.sort();
         mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
     }
     cout << endl;
 
@@ -128,11 +142,13 @@ int main(int argc, char** argv) {
     mylist.printArray();
     if(mylist.getSorted()){
         cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
     } else{
         cout << "List is unsorted" << endl;
         cout << "Sorting array" << endl;
         mylist.sort();
         mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
     }
     cout << endl;
 
@@ -151,11 +167,13 @@ int main(int argc, char** argv) {
     mylist.printArray();
     if(mylist.getSorted()){
         cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
     } else{
         cout << "List is unsorted" << endl;
         cout << "Sorting array" << endl;
         mylist.sort();
         mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
     }
     
     cout << endl << "Testing Coding06 new and/or modified code..." << endl << endl;
