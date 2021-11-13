@@ -10,7 +10,7 @@ Purpose: Program to create a list like object that behaves similarly to the List
 CONSTRUCTORS / DESTRUCTORS
 *********************************/
 
-MyList::MyList(int size) {
+MyList::MyList(int size){
     srand(time(NULL));  // call only once!
     length = size > 0 ? size : DEFAULTSIZE;
     array = new int[length];
@@ -108,8 +108,9 @@ bool MyList::resizeArray(int newSize){
             tempArray[i] = DEFAULTELEMENT;
         }
         delete[] array;
-        if(newSize > length)
+        if(newSize > length){
             sorted = false;
+        }
         array = tempArray;
         length = newSize;
         resized = true;
@@ -126,12 +127,12 @@ bool MyList::getSorted(){
 }
 
 void MyList::sort(){
-    if(sorted = false);
+    if(sorted = false){
         int i, j, minindex; 
-        for (i = 0; i < length-1; i++) { 
+        for (i = 0; i < length-1; i++){ 
             minindex = i; 
-            for (j = i+1; j < length; j++) {
-                if (array[j] < array[minindex]) {
+            for (j = i+1; j < length; j++){
+                if (array[j] < array[minindex]){
                     minindex = j; 
                 }
             }
