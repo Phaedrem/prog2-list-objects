@@ -70,7 +70,9 @@ bool MyList::setElement(int value, int index){
     if(inRange(index)){
         array[index] = value;
         set = true;
-        sorted = false;
+        if(array[index] < array[index]-1 || array[index] > array[index]+1){
+            sorted = false;
+        }
     }
     return set;
 }
