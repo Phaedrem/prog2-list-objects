@@ -323,5 +323,26 @@ int main(int argc, char** argv) {
         cout << "The length of the list is " << mylist.getLength() << endl;
     }
     cout << endl;
+
+    testElement = (mylist.getElement(1)-1);
+    cout << "Attempting to set first element to one less than the second" << endl;
+    if(mylist.setElement(testElement, 0)){
+        cout << "Element Set" << endl << endl;
+    } else {
+        cout << "Element NOT Set" << endl;
+    }
+    mylist.printArray();
+    if(mylist.getSorted()){
+        cout << "List is currently sorted" << endl;
+        cout << "The length of the list is " << mylist.getLength() << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
+        cout << "The length of the list is " << mylist.getLength() << endl;
+    }
+    cout << endl;
+    
     return 0;
 }
