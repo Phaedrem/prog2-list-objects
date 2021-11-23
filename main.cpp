@@ -315,7 +315,7 @@ int main(int argc, char** argv) {
     }
     cout << endl;
 
-    cout << "Searching for an element of 50" << endl;
+    cout << "Searching for an element of 50 of an unsorted array" << endl;
     int request = mylist.findElement(50);
     if(request >= 0){
         cout << "Element 50 was found at index " << request << endl;
@@ -323,6 +323,25 @@ int main(int argc, char** argv) {
         cout << "Element 50 was not found in the list" << endl; 
     }
     cout << endl;
+
+    cout << "Setting fourth element to 50 as well" << endl;
+    if(mylist.setElement(50, 3)){
+        cout << "Element Set" << endl;
+    } else {
+        cout << "Element NOT Set" << endl;
+    }
+    mylist.printArray();
+    cout << endl;
+        
+    cout << "Searching for an element of 50 of an unsorted array" << endl;
+    request = mylist.findElement(50);
+    if(request >= 0){
+        cout << "Element 50 was found at index " << request << endl;
+    } else{
+        cout << "Element 50 was not found in the list" << endl; 
+    }
+    cout << endl;
+
 
     cout << "Setting third element to 100" << endl;
     if(mylist.setElement(100, 2)){
@@ -338,7 +357,7 @@ int main(int argc, char** argv) {
     }
     cout << endl;
 
-    cout << "Searching for an element of 50" << endl;
+    cout << "Searching for an element of 50 of an unsorted array" << endl;
     request = mylist.findElement(50);
     if(request >= 0){
         cout << "Element 50 was found at index " << request << endl;
