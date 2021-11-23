@@ -35,8 +35,19 @@ void MyList::swap(int *n1, int *n2){
     *n2 = temp;
 }
 
-int MyList::binSearch(){
-    return 0;
+int MyList::binSearch(int low, int high, int request){
+    int found = -1;
+    if(high >= low){
+        int mid = low + (high-low)/2;
+        if(array[mid] == request){
+            found = mid;
+        } else if(array[mid] > request){
+            found = binSearch(low, mid-1, request);
+        } else{
+            found = binSearch(mid+1, high, request);
+        }
+    }
+    return found;
 }
 
 int MyList::linSearch(int request){
@@ -170,7 +181,9 @@ void MyList::sort(){
 int MyList::findElement(int request){
     int index = -1;
     if(sorted){
-        index = binSearch();
+        int low = 0;
+        int high = (length-1);
+        index = binSearch(low, high, request);
     } else{
         index = linSearch(request);
     }

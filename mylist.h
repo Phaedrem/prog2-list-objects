@@ -40,7 +40,7 @@ private:
 
     int length;
     int *array;
-    int binSearch();
+    int binSearch(int, int, int);
     int linSearch(int);
 
     void swap(int*, int*);
