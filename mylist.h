@@ -41,7 +41,7 @@ private:
     int length;
     int *array;
     int binSearch();
-    int linSearch();
+    int linSearch(int);
 
     void swap(int*, int*);
     bool inRange(int);

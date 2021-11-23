@@ -39,8 +39,18 @@ int MyList::binSearch(){
     return 0;
 }
 
-int MyList::linSearch(){
-    return 0;
+int MyList::linSearch(int request){
+    int index = -1;
+    int i = 0;
+    while(index != i && i < length){
+        if(array[i] == request){
+            index = i;
+        } else{
+            i++;
+        }
+    }
+
+    return index;
 }
 
 /*********************************
@@ -157,6 +167,12 @@ void MyList::sort(){
     } 
 }
 
-int MyList::findElement(int){
-    return 0;
+int MyList::findElement(int request){
+    int index = -1;
+    if(sorted){
+        index = binSearch();
+    } else{
+        index = linSearch(request);
+    }
+    return index;
 }
