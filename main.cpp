@@ -289,6 +289,10 @@ int main(int argc, char** argv) {
     }
     cout << endl; 
     
+    cout << "***************Testing for Coding 08***************" << endl << endl;
+    
+    mylist.printArray();
+
     cout << "Attempting to set to random numbers between 1 to 100" << endl;
     mylist.setRandom(1,100);
     mylist.printArray();
@@ -298,6 +302,15 @@ int main(int argc, char** argv) {
     } else{
         cout << "List is unsorted" << endl;
         cout << "The length of the list is " << mylist.getLength() << endl;
+    }
+    cout << endl;
+
+    cout << "Searching for an element of 50 of an unsorted array" << endl;
+    int request = mylist.findElement(50);
+    if(request >= 0){
+        cout << "Element 50 was found at index " << request << endl;
+    } else{
+        cout << "Element 50 was not found in the list" << endl; 
     }
     cout << endl;
 
@@ -316,7 +329,7 @@ int main(int argc, char** argv) {
     cout << endl;
 
     cout << "Searching for an element of 50 of an unsorted array" << endl;
-    int request = mylist.findElement(50);
+    request = mylist.findElement(50);
     if(request >= 0){
         cout << "Element 50 was found at index " << request << endl;
     } else{
@@ -324,8 +337,8 @@ int main(int argc, char** argv) {
     }
     cout << endl;
 
-    cout << "Setting fourth element to 50 as well" << endl;
-    if(mylist.setElement(50, 3)){
+    cout << "Setting second element to 50 as well" << endl;
+    if(mylist.setElement(50, 1)){
         cout << "Element Set" << endl;
     } else {
         cout << "Element NOT Set" << endl;
@@ -358,6 +371,114 @@ int main(int argc, char** argv) {
     cout << endl;
 
     cout << "Searching for an element of 50 of an unsorted array" << endl;
+    request = mylist.findElement(50);
+    if(request >= 0){
+        cout << "Element 50 was found at index " << request << endl;
+    } else{
+        cout << "Element 50 was not found in the list" << endl; 
+    }
+    cout << endl;
+
+    cout << "Resizing array to 10" << endl;
+    if(mylist.resizeArray(10)){
+        cout << "Resized..." << endl;
+        mylist.printArray();
+    } else{
+        cout << "Failed to resize" << endl;
+    }
+    cout << "The current length of the array is " << mylist.getLength() << endl;
+    
+    cout << endl;
+
+    cout << "Searching for an element of 50 of an unsorted array" << endl;
+    request = mylist.findElement(50);
+    if(request >= 0){
+        cout << "Element 50 was found at index " << request << endl;
+    } else{
+        cout << "Element 50 was not found in the list" << endl; 
+    }
+    cout << endl;
+    
+    if(mylist.getSorted()){
+        cout << "List is currently sorted" << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
+    }
+    cout << endl;
+
+    cout << "Searching for an element of 50 of a sorted array" << endl;
+    request = mylist.findElement(50);
+    if(request >= 0){
+        cout << "Element 50 was found at index " << request << endl;
+    } else{
+        cout << "Element 50 was not found in the list" << endl; 
+    }
+    cout << endl;
+
+    cout << "Attempting to set to random numbers between 1 to 100" << endl;
+    mylist.setRandom(1,100);
+    mylist.printArray();
+    cout << endl;
+
+    cout << "Searching for an element of 50 of a sorted array" << endl;
+    request = mylist.findElement(50);
+    if(request >= 0){
+        cout << "Element 50 was found at index " << request << endl;
+    } else{
+        cout << "Element 50 was not found in the list" << endl; 
+    }
+    cout << endl;
+
+    if(mylist.getSorted()){
+        cout << "List is currently sorted" << endl;
+    } else{
+        cout << "List is unsorted" << endl;
+        cout << "Sorting array" << endl;
+        mylist.sort();
+        mylist.printArray();
+    }
+    cout << endl;
+
+    cout << "Searching for an element of 50 of a sorted array" << endl;
+    request = mylist.findElement(50);
+    if(request >= 0){
+        cout << "Element 50 was found at index " << request << endl;
+    } else{
+        cout << "Element 50 was not found in the list" << endl; 
+    }
+    cout << endl;
+
+    cout << "Setting third element to 50" << endl;
+    if(mylist.setElement(50, 2)){
+        cout << "Element Set" << endl;
+    } else {
+        cout << "Element NOT Set" << endl;
+    }
+    mylist.printArray();
+    cout << endl;
+
+    cout << "Searching for an element of 50 of a sorted array" << endl;
+    request = mylist.findElement(50);
+    if(request >= 0){
+        cout << "Element 50 was found at index " << request << endl;
+    } else{
+        cout << "Element 50 was not found in the list" << endl; 
+    }
+    cout << endl;
+
+    cout << "Setting fourth element to 50 as well" << endl;
+    if(mylist.setElement(50, 3)){
+        cout << "Element Set" << endl;
+    } else {
+        cout << "Element NOT Set" << endl;
+    }
+    mylist.printArray();
+    cout << endl;
+
+    cout << "Searching for an element of 50 of a sorted array" << endl;
     request = mylist.findElement(50);
     if(request >= 0){
         cout << "Element 50 was found at index " << request << endl;
