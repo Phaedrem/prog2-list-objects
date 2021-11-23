@@ -35,6 +35,13 @@ void MyList::swap(int *n1, int *n2){
     *n2 = temp;
 }
 
+int MyList::binSearch(){
+    return 0;
+}
+
+int MyList::linSearch(){
+    return 0;
+}
 
 /*********************************
 PUBLIC
@@ -148,4 +155,8 @@ void MyList::sort(){
             sorted = true;
         }
     } 
+}
+
+int MyList::findElement(int){
+    return 0;
 }

@@ -34,11 +34,14 @@ bool resizeArray(int);
 int getLength();
 bool getSorted();
 void sort();
+int findElement(int);
 
 private:
 
     int length;
     int *array;
+    int binSearch();
+    int linSearch();
 
     void swap(int*, int*);
     bool inRange(int);
