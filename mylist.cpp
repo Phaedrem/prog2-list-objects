@@ -181,9 +181,7 @@ void MyList::sort(){
 int MyList::findElement(int request){
     int index = -1;
     if(sorted){
-        int low = 0;
-        int high = (length-1);
-        index = binSearch(low, high, request);
+        index = binSearch(ZERO, (length-1), request);
     } else{
         index = linSearch(request);
     }

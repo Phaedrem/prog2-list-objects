@@ -17,6 +17,7 @@ Purpose: Program to create a list like object that behaves similarly to the List
 #define RMAX 10
 #define DEFAULTSIZE 1
 #define DEFAULTELEMENT 0
+#define ZERO 0
 
 class MyList {
 public:
