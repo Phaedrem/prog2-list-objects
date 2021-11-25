@@ -54,10 +54,9 @@ int MyList::linSearch(int request){
     int index = -1;
     int i = 0;
     while(index != i && i < length){
+        i++;
         if(array[i] == request){
             index = i;
-        } else{
-            i++;
         }
     }
 
